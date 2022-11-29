@@ -1,0 +1,11 @@
+#card{
+    width: 244px;
+    height: 307px;
+    border-radius: 25px;
+}
+.imgContiner{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-position:center;
+}
