@@ -13,8 +13,8 @@ function App() {
   },[]);
 
   const loadList=()=>{
-    /*const[ BASE_URL,key,lenguaje,page]=Endpoints*/
-    HttpClient.customFetch(`https://api.themoviedb.org/3/movie/popular?api_key=ddef6f236a598c1deb2e37dfab33a79f&language=en-US&page=1`,
+    const {BASE_URL,key,lenguaje,page}= Endpoints
+    HttpClient.customFetch(`${BASE_URL}${key}${lenguaje}${page}`,
     null,
     handleSucces,
     handleError
