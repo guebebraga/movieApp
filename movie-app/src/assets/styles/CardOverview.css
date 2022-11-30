@@ -5,6 +5,7 @@
     
 }
 .description{
+display: flex;
 width: 244px;
 height: 136px;
 left: 0px;
@@ -12,6 +13,7 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 49.48%);
 color: #FFFFFF;
 border-radius: 25px;
 padding-left: 16px;
+padding-top: 25px;
    
 }
 .vector{
@@ -23,6 +25,10 @@ padding-left: 16px;
     border-radius: 15px;
     font-size: 23.5px;
 
+}
+.divVector{
+    padding-top: 60px;
+    padding-right: 8px;
 }
 h1{
     font-weight: 700;
