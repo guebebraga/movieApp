@@ -4,6 +4,8 @@ export const Endpoints = {
     lenguaje:"&language=en-US",
     page:"&page=1",
     key:"?api_key=ddef6f236a598c1deb2e37dfab33a79f",
-    imgURL:"https://image.tmdb.org/t/p/"
+    imgURL:"https://image.tmdb.org/t/p/",
+    movieBASE_URL: "https://api.themoviedb.org/3/movie/"
+
 };
 

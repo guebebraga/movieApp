@@ -7,6 +7,7 @@ import {CardContiner} from "../src/components/CardContiner"
 
 function App() {
   const [list,setList]= useState([]);
+  const [movie,setMovie]=useState({});
 
   useEffect(()=>{
     loadList();
@@ -30,6 +31,8 @@ function App() {
   const handleError=(error)=>{
     console.log(error);
   }
+  
+
   return (
     <div className="App">
       <Navbar/>

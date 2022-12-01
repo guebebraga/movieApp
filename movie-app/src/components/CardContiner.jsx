@@ -13,6 +13,7 @@ export const CardContiner = ({list}) => {
                 poster_path={poster_path}
                 overview={overview}
                 title={title}
+                /*handleClick={handleClick}*/
                 />
             ))
         }
