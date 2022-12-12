@@ -1,16 +1,46 @@
 import React from 'react'
+import { useState } from 'react'
 import "../assets/styles/Navbar.css"
+import { HttpClient } from '../utils/HttpClient'
+import { Endpoints } from '../Config/Endpoints'
+import logo from '../assets/img/logoTDT.png'
 
-export const Navbar = () => {
+export const Navbar = (props) => {
+  
+  const [title,setTitle]= useState("");
+
+  const handleSubmit= e =>{
+    e.preventDefault();
+    HttpClient.customFetch(`${Endpoints.searchMovieBASE_URL}${Endpoints.key}${Endpoints.lenguaje}&query=${title}${Endpoints.page}&include_adult=false`,
+    null,
+    handleSucces,
+    handleError
+    )  
+  }
+  const handleSucces =(response)=>{
+    if (response){
+      console.log(response)
+      props.setList(response.results)
+    } 
+  }
+
+  const handleError=(error)=>{
+    console.log(error);
+  }
+  
+
   return (
     <aside id="nav">
-        <img className='logo' src="https://s3-alpha-sig.figma.com/img/16ee/2b01/96d07f533c0ed4eedc017b658a40f22e?Expires=1670198400&Signature=BYu2BkiC-fn~ZUCtgHUW500j-~0KK3YTbBjpRM80Kpfx4JLUeUkrGyznHIkJiyZ6FYzdWKYRUyh23leWhrcWESS-ZJWysqMh1mIGtXcetwY09gz8ZxAPGNMPbiB6MCe2AFSgY~JjbZV4qW6TvFotLRMXXFkScvRkNHoRQJXs3s-RxkzkreBze7Jz3zTBLtt0NbwhQElvR7wC7FEiuJHWnnymwNkII8MIj1FFTGlonNoudN3K2YwUYZg73D~Bh5OAhQUoIY2siTh6LYeTwaRGjWs7gebr0IbkM6cbptDSKIXV-r1SPeFcdONvRwbYyEzguESB23LK5gUlm9ZX~cMQ4A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" 
+        <form  className="nav" onSubmit={handleSubmit}>
+        <img className='logo' src={logo} 
          alt="img" />
         <div className="searchContiner">
-        <input className="buscar" type="text" placeholder='  Buscar..'/>
+        <input className="buscar" type="text" placeholder='  Buscar..' onChange={e=> setTitle(e.target.value)}/>
         <button className='lupa' type='submit'><span className="material-symbols-outlined">search</span></button>
         </div>
         <input className="favoritos"type="submit" value={'Ver Favoritos 3'}/>
+        </form>
+
     </aside>
   )
 }

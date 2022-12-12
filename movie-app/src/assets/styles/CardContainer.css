@@ -1,4 +1,4 @@
-#container{
+.cardContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -9,3 +9,13 @@
     padding:56px 0px;
     
 }
+
+.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+  }

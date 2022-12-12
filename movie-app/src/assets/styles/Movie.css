@@ -1,0 +1,11 @@
+#movie{
+    display: flex;
+    background-color:blueviolet;
+    width: 600px;
+    height: 500px;
+}
+img{
+width: 565px;
+height: 711px;
+
+}

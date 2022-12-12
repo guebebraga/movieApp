@@ -5,7 +5,8 @@ export const Endpoints = {
     page:"&page=1",
     key:"?api_key=ddef6f236a598c1deb2e37dfab33a79f",
     imgURL:"https://image.tmdb.org/t/p/",
-    movieBASE_URL: "https://api.themoviedb.org/3/movie/"
+    movieBASE_URL: "https://api.themoviedb.org/3/movie/",
+    searchMovieBASE_URL:"https://api.themoviedb.org/3/search/movie"
 
 };
 

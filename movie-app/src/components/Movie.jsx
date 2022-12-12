@@ -3,24 +3,26 @@ import "../assets/styles/Movie.css"
 import { Endpoints } from '../Config/Endpoints'
 
 export const Movie = ({title,poster_path,genres,overview,
-                       revenue,release_date,runtime,vote_average,spoken_languages}) => {
-  const {movieBASE_URL,key,lenguaje,}= Endpoints
-  const ide ='436270'
+  revenue,release_date,runtime,vote_average,spoken_languages,id}) => {
+
+const {imgURL}= Endpoints
+
   return (
-    <main id='continer'>
+    <article id='movie'>
         <aside className='poster'>
-            <img src={`${movieBASE_URL}${ide}${key}${lenguaje}${poster_path}`} alt="img"/>
+            <img src={`${imgURL}w400${poster_path}`} alt="img"/>
         </aside>
-        <article className='description'>
+        <article className='ditails'>
             <h1>{title}</h1>
-            <p>{genres}</p>
+            <button>+</button>
+            <div>{genres}</div>
             <p>{overview}</p>
             <p>{revenue}</p>
             <p>{release_date}</p>
             <p>{runtime}</p>  
             <p>{vote_average}</p> 
-            <p>{spoken_languages}</p>     
+            <div>{spoken_languages}</div>     
         </article>
-    </main>
+    </article>
   )
 }

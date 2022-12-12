@@ -1,7 +1,7 @@
 import React from 'react'
 import "../assets/styles/CardOverview.css"
 
-export const CardOverview = ({overview,title/*,handleClick*/}) => {
+export const CardOverview = ({overview,title}) => {
   return (
     <article id='continer'>
       <div className="description"> 
@@ -10,7 +10,7 @@ export const CardOverview = ({overview,title/*,handleClick*/}) => {
         <p>{overview.slice(0,100)}</p>
       </div>
       <div className='divVector'>
-          <button className='vector' /*onClick={handleClick}*/>+</button>
+          <button className='vector'>+</button>
       </div>
       </div>
     </article>
