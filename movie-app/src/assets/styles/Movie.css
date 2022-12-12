@@ -3,9 +3,13 @@
     background-color:blueviolet;
     width: 600px;
     height: 500px;
-}
-img{
-width: 565px;
-height: 711px;
 
+}
+.imgDetails{
+ height:100%;
+ width: fit-content;
+ 
+}
+.ditails{
+    background-color: #F5F5F5;
 }

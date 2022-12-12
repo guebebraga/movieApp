@@ -10,7 +10,7 @@ const {imgURL}= Endpoints
   return (
     <article id='movie'>
         <aside className='poster'>
-            <img src={`${imgURL}w400${poster_path}`} alt="img"/>
+            <img className='imgDetails' src={`${imgURL}w400${poster_path}`} alt="img"/>
         </aside>
         <article className='ditails'>
             <h1>{title}</h1>

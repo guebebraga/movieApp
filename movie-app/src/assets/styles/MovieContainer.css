@@ -1,0 +1,10 @@
+#movieContainer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: #F5F5F5;
+    min-width: 1098px;
+    max-width: 1400px;
+    padding: 40px;
+   
+}

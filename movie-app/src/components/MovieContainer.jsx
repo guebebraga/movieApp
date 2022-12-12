@@ -1,14 +1,13 @@
-import "../assets/styles/CardContainer.css"
+import "../assets/styles/MovieContainer.css"
 import { Movie } from './Movie'
 //import { Endpoints } from "../Config/Endpoints"
-
 
 export const MovieContainer = ({movie}) => {
   
   const {id,title,poster_path,genres,overview,revenue,release_date,runtime,vote_average,spoken_languages}=movie
   
   return (
-    <section className ='movieContainer'>
+    <section id ='movieContainer'>
       {
       movie? 
       <Movie
