@@ -1,15 +1,53 @@
 #movie{
     display: flex;
-    background-color:blueviolet;
-    width: 600px;
+    width: 900px;
     height: 500px;
 
 }
 .imgDetails{
- height:100%;
- width: fit-content;
+ height: 711px;
+ width: 565px;
  
 }
 .ditails{
-    background-color: #F5F5F5;
+   font-family: sans-serif;
 }
+.overview{
+color:#4B4B4B ;
+font-size: 17px;
+}
+
+.ditails h1{
+    font-weight: 600;
+    font-size: 48px;
+    color:#1C1C1CD9 ;
+}
+.genres{
+ display: flex;
+}
+.genres div{
+    margin-right: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    color:#FFFFFF ;
+    background-color:#66CCCC;
+    border-radius: 5px;
+
+}
+.ditails p{
+    color: #4B4B4B;
+    font-size: 17px;
+    margin-top: 12px;
+}
+.spoken_languages{
+    display: flex;
+}
+.spoken_languages p{
+    margin-right: 7px;
+    font-weight: 600;
+    font-size: 16px;
+    color:#FFFFFF ;
+    background-color:#66CCCC;
+    border-radius: 5px;
+}
+

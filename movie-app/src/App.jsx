@@ -8,8 +8,9 @@ import axios from "axios"
 
 function App() {
   const [list,setList]= useState([]);
-  const [movie,setMovie]=useState({title:'NO TE RINDAS'});
+  const [movie,setMovie]=useState({title:'NO TE RINDAS'})
   const [selectMovie,setSelectMovie]=useState(false)
+  const [closeMovie,setCloseMovie]=useState(false)
 
   useEffect(()=>{
     loadList();
@@ -45,7 +46,6 @@ function App() {
     const {movieBASE_URL,key,lenguaje}=Endpoints
     const {data} = await axios.get(`${movieBASE_URL}id${key}${lenguaje}`.replace('id',id))
     if (data){
-    //const laData= JSON.parse(JSON.stringify(data))
     console.log(data)    
     setMovie(data)
     setSelectMovie(true)
@@ -62,13 +62,10 @@ function App() {
       movie={movie}
       loadMovie={loadMovie}
       selectMovie={selectMovie}
+      setCloseMovie={setCloseMovie}
       />
     </div>
 
   )
 }
 export default App
-//Object.assign({} , data)
-//setMovie(Object.entries(data))
-//setMovie(movie.push(data))
-//setMovie(Object.keys(movie))
