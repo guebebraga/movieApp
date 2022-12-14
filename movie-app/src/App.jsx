@@ -10,7 +10,7 @@ function App() {
   const [list,setList]= useState([]);
   const [movie,setMovie]=useState({title:'NO TE RINDAS'})
   const [selectMovie,setSelectMovie]=useState(false)
-  const [closeMovie,setCloseMovie]=useState(false)
+  
 
   useEffect(()=>{
     loadList();
@@ -51,6 +51,11 @@ function App() {
     setSelectMovie(true)
     }
     }
+    const pullOutDetails =()=>{
+      setSelectMovie(false)
+    }
+
+
   return (
 
     <div className="App"> 
@@ -62,7 +67,7 @@ function App() {
       movie={movie}
       loadMovie={loadMovie}
       selectMovie={selectMovie}
-      setCloseMovie={setCloseMovie}
+      pullOutDetails={pullOutDetails}
       />
     </div>
 

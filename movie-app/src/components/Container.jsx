@@ -3,7 +3,7 @@ import { CardContainer } from './CardContainer'
 import { MovieContainer } from './MovieContainer'
 
 
-export const Container = ({list,movie,loadMovie,selectMovie,setCloseMovie}) => {
+export const Container = ({list,movie,loadMovie,selectMovie,pullOutDetails}) => {
 
  return (
     <main id='main'>
@@ -17,7 +17,8 @@ export const Container = ({list,movie,loadMovie,selectMovie,setCloseMovie}) => {
         :
         <MovieContainer
         movie={movie}
-        setCloseMovie={setCloseMovie}
+        pullOutDetails={pullOutDetails}
+       
         />
        }
 

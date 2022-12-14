@@ -24,9 +24,7 @@ padding-top: 25px;
     border: 2.5px solid #FFFFFF;
     border-radius: 15px;
     font-size:20px;
-    font-weight: 600;
-    
-
+    font-weight: 600; 
 }
 .divVector{
     padding-top: 60px;
@@ -36,4 +34,15 @@ h1{
     font-weight: 700;
     font-size: 16px;
     line-height: 157.15%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.vector{
+    padding-top: 1.5px;
 }

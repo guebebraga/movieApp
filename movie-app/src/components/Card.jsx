@@ -7,10 +7,10 @@ export const Card = ({poster_path,overview,title,id,loadMovie}) => {
 
   return (
     <article id='card'>
-        <div
+        <div 
+         className="imgContiner"
          key={id}
          onClick={()=>loadMovie(id)}
-         className="imgContiner"
          style={{
          backgroundImage:`url(${Endpoints.imgURL}w400${poster_path})`,
          backgroundRepeat:'no-repeat',

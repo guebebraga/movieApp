@@ -10,7 +10,7 @@ export const CardOverview = ({overview,title}) => {
         <p>{overview.slice(0,100)}</p>
       </div>
       <div className='divVector'>
-          <button className='vector'>+</button>
+          <button className='vector'><span className='material-symbols-outlined'>Add</span></button>
       </div>
       </div>
     </article>

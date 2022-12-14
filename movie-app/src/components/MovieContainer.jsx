@@ -2,7 +2,7 @@ import "../assets/styles/MovieContainer.css"
 import { Movie } from './Movie'
 //import { Endpoints } from "../Config/Endpoints"
 
-export const MovieContainer = ({movie,setCloseMovie}) => {
+export const MovieContainer = ({movie,pullOutDetails}) => {
   
   const {id,title,poster_path,genres,overview,revenue,release_date,runtime,vote_average,spoken_languages}=movie
  
@@ -22,8 +22,9 @@ export const MovieContainer = ({movie,setCloseMovie}) => {
                 revenue={revenue}
                 vote_average={vote_average}
                 poster_path={poster_path}
-                setCloseMovie={setCloseMovie}
-      />      :
+                pullOutDetails={pullOutDetails}
+      />      
+      :
       "No hay movie"
      }       
     </section>
@@ -31,45 +32,3 @@ export const MovieContainer = ({movie,setCloseMovie}) => {
 }
 
 
-/*<Movie
-                key={id}
-                id ={id}
-                title={title}
-                poster_path={poster_path}
-                genres={genres}
-                overview={overview}
-                revenue={revenue}
-                release_date={release_date}
-                runtime={runtime}
-                vote_average={vote_average}
-                spoken_languages={spoken_languages}
-                />
-      */
-
-/*
-<article id='movie'>
-      <aside className='poster'>
-          <img src={`${movieBASE_URL}${key}${lenguaje}${poster_path}`} alt="img"/>
-      </aside>
-      <article className='ditails'>
-          <h1>{title}</h1>
-          <button>+</button>
-          <p>{genres}</p>
-          <p>{overview}</p>
-          <p>{revenue}</p>
-          <p>{release_date}</p>
-          <p>{runtime}</p>  
-          <p>{vote_average}</p> 
-          <p>{spoken_languages}</p>     
-      </article>
-  </article>
-*/
-
-/*
-list.map(({id,name})=>(
-<div>
-<p>id</p>
-<p>name</p>
-</div>
-))
-*/

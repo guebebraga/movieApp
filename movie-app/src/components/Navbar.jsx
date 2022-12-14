@@ -21,7 +21,8 @@ export const Navbar = (props) => {
     if (response){
       console.log(response)
       props.setList(response.results)
-    } 
+    }
+   
   }
 
   const handleError=(error)=>{
