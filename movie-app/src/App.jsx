@@ -8,7 +8,7 @@ import axios from "axios"
 
 function App() {
   const [list,setList]= useState([]);
-  const [movie,setMovie]=useState({title:'NO TE RINDAS'})
+  const [movie,setMovie]=useState({})
   const [selectMovie,setSelectMovie]=useState(false)
   
 

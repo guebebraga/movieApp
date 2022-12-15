@@ -9,11 +9,11 @@
     border-radius: 20px;
     background-position:center;
     cursor: pointer; 
-    /*transition: background-size .4s;*/
-   
+    transition: background-size .5s;
 }
 
-/*.imgContiner:hover{
-    
-}*/
+.imgContiner:hover{
+  background-position: 0% 0%;
+ 
+}
 
